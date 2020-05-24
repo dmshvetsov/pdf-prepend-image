@@ -2,6 +2,8 @@
 
 Main usage is to add a cover for a PDF.
 
+Tested with Node.JS >=12.4.0.
+
 ## Usage
 
     $ npm start path/to/file.pdf path/to/image.png
