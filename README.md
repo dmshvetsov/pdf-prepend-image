@@ -1,6 +1,6 @@
 # Node.JS script to append an image to a PDF file
 
-Main usage is to add a cover for a PDF.
+Append an image to a PDF file. Most obvious usage is to add a cover for a PDF.
 
 Tested with Node.JS >=12.4.0.
 
