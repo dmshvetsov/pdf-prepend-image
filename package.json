@@ -4,7 +4,8 @@
   "description": "Script for appending image for PDF files",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,8 @@
   "homepage": "https://github.com/iamdidev/pdf-append-image#readme",
   "dependencies": {
     "pdf-lib": "1.6.0"
+  },
+  "engines" : {
+    "node" : ">=14.3.0"
   }
 }
