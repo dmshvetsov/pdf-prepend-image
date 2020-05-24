@@ -14,4 +14,4 @@ NOTE: only PNG image are supported.
 
 ## Author
 
-@iamdidev (Dmitry "iamdi" Shvetsov)
+[@iamdidev](https://github.com/iamdidev) (Dmitry "iamdi" Shvetsov)
