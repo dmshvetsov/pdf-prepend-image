@@ -1,11 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 const assert = require('assert');
-const { degrees, PDFDocument, rgb, StandardFonts } = require('pdf-lib');
+const { PDFDocument } = require('pdf-lib');
 
 const run = async ({ pathToPDF, pathToImage }) => {
   const pdfDoc = await PDFDocument.load(fs.readFileSync(pathToPDF));
-  const img = await pdfDoc.embedPng(fs.readFileSync(pathToImage))
+  const img = await pdfDoc.embedPng(fs.readFileSync(pathToImage));
 
   const imagePage = pdfDoc.insertPage(0);
   imagePage.drawImage(img, {
@@ -15,7 +15,7 @@ const run = async ({ pathToPDF, pathToImage }) => {
     height: imagePage.getHeight(),
   });
 
-  const pdfBytes = await pdfDoc.save()
+  const pdfBytes = await pdfDoc.save();
   const newFilePath = `${path.basename(pathToPDF, '.pdf')}-result.pdf`;
   fs.writeFileSync(newFilePath, pdfBytes);
 }
